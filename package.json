@@ -1,0 +1,14 @@
+{
+  "name": "vanilla",
+  "version": "1.0.0",
+  "description": "JavaScript example starter project",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "parcel --open",
+    "build": "parcel build"
+  },
+  "dependencies": {
+    "parcel": "2.8.0",
+    "parcel-transformer-preval": "0.1.1"
+  }
+}
