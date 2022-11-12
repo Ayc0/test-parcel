@@ -2,13 +2,21 @@
   "name": "vanilla",
   "version": "1.0.0",
   "description": "JavaScript example starter project",
-  "main": "src/index.js",
+  "//source": "src/index.html",
+  "source": "src/index.js",
   "scripts": {
     "start": "parcel --open",
-    "build": "parcel build"
+    "build": "rm -rf .parcel-cache dist && parcel build"
   },
+  "workspaces": [
+    "parcel-runtime-html",
+    "parcel-bundler-html"
+  ],
   "dependencies": {
     "parcel": "2.8.0",
+    "parcel-bundler-html": "workspace:*",
+    "parcel-runtime-html": "workspace:*",
     "parcel-transformer-preval": "0.1.1"
-  }
+  },
+  "packageManager": "yarn@3.2.4"
 }

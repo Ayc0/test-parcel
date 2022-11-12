@@ -1,0 +1,11 @@
+{
+  "name": "parcel-bundler-html",
+  "main": "index.js",
+  "engines": {
+    "parcel": "2.x"
+  },
+  "dependencies": {
+    "@parcel/bundler-default": "^2.8.0",
+    "@parcel/plugin": "^2.8.0"
+  }
+}
