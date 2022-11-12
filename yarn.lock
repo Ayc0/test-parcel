@@ -308,7 +308,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@parcel/core@npm:2.8.0":
+"@parcel/core@npm:2.8.0, @parcel/core@npm:^2.8.0":
   version: 2.8.0
   resolution: "@parcel/core@npm:2.8.0"
   dependencies:
@@ -2243,6 +2243,7 @@ __metadata:
   resolution: "parcel-bundler-html@workspace:parcel-bundler-html"
   dependencies:
     "@parcel/bundler-default": ^2.8.0
+    "@parcel/core": ^2.8.0
     "@parcel/plugin": ^2.8.0
   languageName: unknown
   linkType: soft

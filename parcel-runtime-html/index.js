@@ -97,7 +97,5 @@ module.exports = new Runtime({
     //   }
     //   console.log(key, bundle[key]);
     // }
-
-    return;
   },
 });
