@@ -4,6 +4,10 @@
     "*.preval.js": [
       "parcel-transformer-preval",
       "..."
+    ],
+    "*.mdx": [
+      "parcel-transformer-mdx-2",
+      "@parcel/transformer-js"
     ]
   },
   "runtimes": [

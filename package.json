@@ -2,21 +2,33 @@
   "name": "vanilla",
   "version": "1.0.0",
   "description": "JavaScript example starter project",
-  "//source": "src/index.html",
-  "source": "src/index.js",
+  "source": "src/index.html",
+  "//source": "src/index.js",
   "scripts": {
-    "start": "parcel --open",
+    "start": "rm -rf .parcel-cache dist && parcel",
     "build": "rm -rf .parcel-cache dist && parcel build"
   },
   "workspaces": [
     "parcel-runtime-html",
-    "parcel-bundler-html"
+    "parcel-bundler-html",
+    "parcel-transformer-mdx-2"
   ],
   "dependencies": {
-    "parcel": "2.8.0",
+    "parcel": "2.7.0",
     "parcel-bundler-html": "workspace:*",
     "parcel-runtime-html": "workspace:*",
-    "parcel-transformer-preval": "0.1.1"
+    "parcel-transformer-mdx-2": "workspace:*",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
-  "packageManager": "yarn@3.2.4"
+  "resolutions": {
+    "parcel/config-default": "2.7.0"
+  },
+  "packageManager": "yarn@3.2.4",
+  "devDependencies": {
+    "@mdx-js/react": "^1.6.22",
+    "@parcel/transformer-mdx": "2.7.0",
+    "process": "^0.11.10",
+    "remark-gfm": "^3.0.0"
+  }
 }

@@ -8,12 +8,12 @@ const CONFIG = Symbol.for("parcel-plugin-config");
 module.exports = new Bundler({
   ...DefaultBundler[CONFIG],
   async bundle({ bundleGraph, config, options, logger }) {
-    bundleGraph.createBundle({
-      entryAsset: createAsset("hello.html", {
-        type: "html",
-        isSource: true,
-      }),
-    });
+    // bundleGraph.createBundle({
+    //   entryAsset: createAsset("hello.html", {
+    //     type: "html",
+    //     isSource: true,
+    //   }),
+    // });
     DefaultBundler[CONFIG].bundle({ bundleGraph, config, options, logger });
   },
 });

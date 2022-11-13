@@ -5,6 +5,6 @@
     "parcel": "2.x"
   },
   "dependencies": {
-    "@parcel/plugin": "^2.8.0"
+    "@parcel/plugin": "2.7.0"
   }
 }
