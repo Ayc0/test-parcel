@@ -1,12 +1,10 @@
 import "./styles.css";
 import { createRoot } from "react-dom/client";
 
-// import list from "./hello.preval";
+import list from "./hello.preval";
 import Hello from "./hello.mdx";
 
-const list = [];
-
-const root = createRoot(document.body);
+const root = createRoot(document.getElementById("app"));
 
 root.render(
   <>

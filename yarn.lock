@@ -895,7 +895,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@parcel/plugin@npm:2.7.0":
+"@parcel/plugin@npm:2.7.0, @parcel/plugin@npm:^2.0.0":
   version: 2.7.0
   resolution: "@parcel/plugin@npm:2.7.0"
   dependencies:
@@ -3945,6 +3945,16 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"parcel-transformer-preval@npm:^0.1.3":
+  version: 0.1.3
+  resolution: "parcel-transformer-preval@npm:0.1.3"
+  dependencies:
+    "@parcel/plugin": ^2.0.0
+    require-from-string: ^2.0.2
+  checksum: a841223a3f86779af848c6dd45a7b450a22562230f1ef037b1347f89f130670ea74543fcc37fc40802cfea79c61248ea04ecde7942259a3c5490a61d581bf74a
+  languageName: node
+  linkType: hard
+
 "parcel@npm:2.7.0":
   version: 2.7.0
   resolution: "parcel@npm:2.7.0"
@@ -4307,6 +4317,13 @@ __metadata:
   version: 1.6.1
   resolution: "repeat-string@npm:1.6.1"
   checksum: 1b809fc6db97decdc68f5b12c4d1a671c8e3f65ec4a40c238bc5200e44e85bcc52a54f78268ab9c29fcf5fe4f1343e805420056d1f30fa9a9ee4c2d93e3cc6c0
+  languageName: node
+  linkType: hard
+
+"require-from-string@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "require-from-string@npm:2.0.2"
+  checksum: a03ef6895445f33a4015300c426699bc66b2b044ba7b670aa238610381b56d3f07c686251740d575e22f4c87531ba662d06937508f0f3c0f1ddc04db3130560b
   languageName: node
   linkType: hard
 
@@ -4984,6 +5001,7 @@ __metadata:
     parcel-bundler-html: "workspace:*"
     parcel-runtime-html: "workspace:*"
     parcel-transformer-mdx-2: "workspace:*"
+    parcel-transformer-preval: ^0.1.3
     process: ^0.11.10
     react: ^18.2.0
     react-dom: ^18.2.0
